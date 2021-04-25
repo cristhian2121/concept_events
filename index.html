@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body onload="loadDocument()">
+    <main>
+      <div class="container">
+        <form action="" class="form" id="js-form">
+          <div class="form-valueInput">
+            <label>Convertir desde: </label>
+            <input
+              type="number"
+              class="form-input"
+              id="valueInput"
+              min="0"
+              autofocus
+            />
+
+            <select id="fromChange" class="form-select">
+              <option value="1">Pesos</option>
+              <option value="2" selected>Dolares</option>
+            </select>
+          </div>
+
+          <div class="form-to">
+            <label>Convertir a:</label>
+            <select name="" class="form-select" id="toChange">
+              <option value="1">Pesos</option>
+              <option value="2" selected>Dolares</option>
+            </select>
+          </div>
+
+          <div class="form-botton">
+            <input type="submit" class="input-button" value="Convertir" />
+          </div>
+
+          <p class="container-p"><span class="container-result"></span></p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
